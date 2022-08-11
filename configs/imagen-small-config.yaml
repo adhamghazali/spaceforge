@@ -1,6 +1,6 @@
 dataset:
   dataset_name: "cc12m"
-  dataset_path: "/datadrive/cc2m/cc12m_w_embeds/{000002..000005}.tar" 
+  dataset_path: "/datadrive/cc2m/cc12m_w_embeds/{00000..00002}.tar" 
   
   image_size: 256
   shuffle_size: 100000
@@ -19,9 +19,9 @@ train:
   unet1_max_batch_size: 32
   unet2_max_batch_size: 16
   load_checkpoint: False
-  load_checkpoint_path: "../checkpoint/imagen_small_checkpoint.pt"
-  checkpoint_rate: 1000
-  checkpoint_path: "../checkpoint/imagen_small_checkpoint.pt"
+  load_checkpoint_path: "/datadrive/checkpoint/imagen_small_checkpoint.pt"
+  checkpoint_rate: 10
+  checkpoint_path: "/datadrive/checkpoint/imagen_small_checkpoint.pt"
   checkpoint_strict: True
   checkpoint_model_only: False
   image_non_blocking: True

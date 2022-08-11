@@ -1,0 +1,86 @@
+
+The base dimension of your u-net should ideally be no smaller than 128, as recommended by a professional DDPM trainer https://nonint.com/2022/05/04/friends-dont-let-friends-train-small-diffusion-models/
+Epoch 1/5
+--- Unet 1 ---
+<torch.utils.data.dataloader.DataLoader object at 0x7f3d25f5fcd0>
+
+
+
+
+
+
+
+
+
+Train Step 10/164 --- Loss: 0.6248 unet 2 has not been trained
+when sampling, you can pass stop_at_unet_number to stop early in the cascade, so it does not try to generate with untrained unets
+0it [00:00, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0it [01:35, ?it/s] step: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊| 999/1000 [01:35<00:00, 10.54it/s]
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/serialization.py", line 379, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/serialization.py", line 604, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+OSError: [Errno 28] No space left on device
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/azureuser/imagen/spaceforge/train.py", line 270, in <module>
+    run_train_loop(cfg, trainer, loader, device, i=cfg["train"]["unet_number"])
+  File "/home/azureuser/imagen/spaceforge/train.py", line 144, in run_train_loop
+    train(cfg, dataloader, trainer, epoch, i, device)
+  File "/home/azureuser/imagen/spaceforge/train.py", line 122, in train
+    trainer.save(cfg["train"]["checkpoint_path"])
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/trainer.py", line 692, in save
+    torch.save(save_obj, f)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/serialization.py", line 380, in save
+    return
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:319] . unexpected pos 2516460480 vs 2516460368
