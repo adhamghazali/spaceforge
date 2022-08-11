@@ -1,0 +1,271 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.1
+    framework: huggingface
+    huggingface_version: 4.21.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.12
+    start_time: 1660209892.515351
+    t:
+      1:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 71
+      - 79
+      2:
+      - 1
+      - 11
+      - 41
+      - 49
+      - 55
+      - 71
+      - 79
+      3:
+      - 16
+      - 23
+      4: 3.9.12
+      5: 0.13.1
+      6: 4.21.1
+      8:
+      - 5
+dataset.dataset_name:
+  desc: null
+  value: cc12m
+dataset.dataset_path:
+  desc: null
+  value: /datadrive/cc2m/cc12m_w_embeds/{000002..000005}.tar
+dataset.drop_last:
+  desc: null
+  value: true
+dataset.image_size:
+  desc: null
+  value: 256
+dataset.num_images:
+  desc: null
+  value: 42123
+dataset.num_workers:
+  desc: null
+  value: 4
+dataset.pin_memory:
+  desc: null
+  value: true
+dataset.precomputed_embeddings:
+  desc: null
+  value: true
+dataset.prefetch_factor:
+  desc: null
+  value: 1
+dataset.shard_shuffle:
+  desc: null
+  value: true
+dataset.shuffle_initial:
+  desc: null
+  value: 2500
+dataset.shuffle_size:
+  desc: null
+  value: 100000
+model.cond_drop_prob:
+  desc: null
+  value: 0.1
+model.image_sizes:
+  desc: null
+  value:
+  - 64
+  - 256
+model.text_encoder_name:
+  desc: null
+  value: google/t5-v1_1-xl
+model.timesteps:
+  desc: null
+  value: 1000
+model.unet1.attn_heads:
+  desc: null
+  value: 8
+model.unet1.cond_dim:
+  desc: null
+  value: 512
+model.unet1.cosine_sim_attn:
+  desc: null
+  value: false
+model.unet1.dim:
+  desc: null
+  value: 128
+model.unet1.dim_mults:
+  desc: null
+  value:
+  - 1
+  - 2
+  - 3
+  - 4
+model.unet1.dropout:
+  desc: null
+  value: 0.1
+model.unet1.ff_mult:
+  desc: null
+  value: 2
+model.unet1.layer_attns:
+  desc: null
+  value:
+  - false
+  - true
+  - true
+  - true
+model.unet1.layer_cross_attns:
+  desc: null
+  value:
+  - false
+  - true
+  - true
+  - true
+model.unet1.memory_efficient:
+  desc: null
+  value: false
+model.unet1.num_resnet_blocks:
+  desc: null
+  value: 3
+model.unet1.use_linear_attn:
+  desc: null
+  value: false
+model.unet2.attn_heads:
+  desc: null
+  value: 8
+model.unet2.cond_dim:
+  desc: null
+  value: 512
+model.unet2.cosine_sim_attn:
+  desc: null
+  value: false
+model.unet2.dim:
+  desc: null
+  value: 64
+model.unet2.dim_mults:
+  desc: null
+  value:
+  - 1
+  - 2
+  - 4
+  - 8
+model.unet2.dropout:
+  desc: null
+  value: 0.1
+model.unet2.ff_mult:
+  desc: null
+  value: 2
+model.unet2.layer_attns:
+  desc: null
+  value:
+  - false
+  - false
+  - false
+  - true
+model.unet2.layer_cross_attns:
+  desc: null
+  value:
+  - false
+  - false
+  - false
+  - true
+model.unet2.memory_efficient:
+  desc: null
+  value: true
+model.unet2.num_resnet_blocks:
+  desc: null
+  value:
+  - 2
+  - 4
+  - 8
+  - 8
+model.unet2.use_linear_attn:
+  desc: null
+  value: false
+train.amp:
+  desc: null
+  value: true
+train.batch_size:
+  desc: null
+  value: 256
+train.beta1:
+  desc: null
+  value: 0.9
+train.beta2:
+  desc: null
+  value: 0.99
+train.checkpoint_model_only:
+  desc: null
+  value: false
+train.checkpoint_path:
+  desc: null
+  value: ../checkpoint/imagen_small_checkpoint.pt
+train.checkpoint_rate:
+  desc: null
+  value: 1000
+train.checkpoint_strict:
+  desc: null
+  value: true
+train.cond_scale:
+  desc: null
+  value: 5
+train.cosine_decay_max_steps:
+  desc: null
+  value: None
+train.cudnn_benchmark:
+  desc: null
+  value: true
+train.embedding_non_blocking:
+  desc: null
+  value: false
+train.epochs:
+  desc: null
+  value: 5
+train.eps:
+  desc: null
+  value: 1.0e-08
+train.group_wd_params:
+  desc: null
+  value: true
+train.image_non_blocking:
+  desc: null
+  value: true
+train.load_checkpoint:
+  desc: null
+  value: false
+train.load_checkpoint_path:
+  desc: null
+  value: ../checkpoint/imagen_small_checkpoint.pt
+train.lr:
+  desc: null
+  value: 1.5e-05
+train.max_grad_norm:
+  desc: null
+  value: None
+train.sample_texts:
+  desc: null
+  value:
+  - dog
+  - cheeseburger
+  - blue car
+  - red flowers in a white vase
+  - a puppy looking anxiously at a giant donut on the table
+  - lizard running across the desert on two feet
+train.unet1_max_batch_size:
+  desc: null
+  value: 32
+train.unet2_max_batch_size:
+  desc: null
+  value: 16
+train.unet_number:
+  desc: null
+  value: 1
+train.use_ema:
+  desc: null
+  value: true
+train.warmup_steps:
+  desc: null
+  value: None

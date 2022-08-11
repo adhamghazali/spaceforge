@@ -1,5 +1,6 @@
 import json
 import torch
+from PIL import Image
 import random
 import braceexpand
 from time import time
@@ -32,23 +33,26 @@ def shuffle_augment_wds(input, output):
     src = wds.DataPipeline(
         wds.SimpleShardList(input),
         wds.tarfile_to_samples(),
-        wds.decode("pil"),
+        wds.decode("rgb"),
         wds.to_tuple("__key__", "jpg;png", "txt", "txt"),
         wds.map_tuple(None, None, None, get_emb_tensor)
     )
 
     samples = []
     for key, img, cap, emb in tqdm(src, total=count, desc=f"Extracting {input}"):
+        #print(img)
+        
+        #Image.open(img)
         samples.append([key, img, cap, emb])
     random.shuffle(samples)
 
-    dst = wds.TarWriter(output)
+    dst = wds.TarWriter(output, encoder=True)
     for sample in tqdm(samples, total=count, desc=f"Writing {output}"):
         dst.write({"__key__":sample[0], "png":sample[1], "txt":sample[2], "emb.pyd":sample[3]})
     end = time()
     print(f"Finished - {end-start:.0f}s")
 
-input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00000..00005}.tar")
-output_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m_w_embeds/{00000..000005}.tar")
+input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00000..00003}.tar")
+output_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m_w_embeds/{00000..00003}.tar")
 for input_shard, output_shard in zip(input_shards, output_shards):
     shuffle_augment_wds(input=input_shard, output=output_shard)

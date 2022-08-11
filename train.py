@@ -64,6 +64,7 @@ def get_sample_images(cfg, trainer, i):
 def train(cfg, dataloader, trainer, epoch, i, device):
     n_batches = cfg["dataset"]["num_images"] // cfg["train"]["batch_size"]
     step_start = time()
+    print(dataloader)
     for step, batch in enumerate(dataloader): 
         curr_step = int(n_batches*(epoch-1) + step)
         

@@ -1,0 +1,64 @@
+
+The base dimension of your u-net should ideally be no smaller than 128, as recommended by a professional DDPM trainer https://nonint.com/2022/05/04/friends-dont-let-friends-train-small-diffusion-models/
+Epoch 1/5
+--- Unet 1 ---
+<torch.utils.data.dataloader.DataLoader object at 0x7f91dc02fa00>
+
+
+
+
+
+
+
+
+
+
+Train Step 11/32 --- Loss: 0.6112
+Traceback (most recent call last):
+  File "/home/azureuser/imagen/spaceforge/train.py", line 270, in <module>
+    run_train_loop(cfg, trainer, loader, device, i=cfg["train"]["unet_number"])
+  File "/home/azureuser/imagen/spaceforge/train.py", line 144, in run_train_loop
+    train(cfg, dataloader, trainer, epoch, i, device)
+  File "/home/azureuser/imagen/spaceforge/train.py", line 68, in train
+    for step, batch in enumerate(dataloader):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1376, in _next_data
+    return self._process_data(data)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1402, in _process_data
+    data.reraise()
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+tarfile.ReadError: Caught ReadError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 32, in fetch
+    data.append(next(self.dataset_iter))
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/iterators.py", line 304, in to_tuple
+    for sample in data:
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/iterators.py", line 284, in map_dict
+    for sample in data:
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/iterators.py", line 249, in rename
+    for sample in data:
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/iterators.py", line 234, in map
+    for sample in data:
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/iterators.py", line 176, in shuffle
+    buf.append(next(data))  # skipcq: PYL-R1708
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/tariterators.py", line 150, in group_by_keys
+    for filesample in data:
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/tariterators.py", line 137, in tar_file_expander
+    if handler(exn):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/handlers.py", line 24, in reraise_exception
+    raise exn
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/tariterators.py", line 132, in tar_file_expander
+    for sample in tar_file_iterator(source["stream"], info=info):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/tariterators.py", line 114, in tar_file_iterator
+    if handler(exn):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/handlers.py", line 24, in reraise_exception
+    raise exn
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/webdataset/tariterators.py", line 106, in tar_file_iterator
+    data = stream.extractfile(tarinfo).read()
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/tarfile.py", line 686, in read
+    raise ReadError("unexpected end of data")
+tarfile.ReadError: ("unexpected end of data @ <_io.BufferedReader name='/datadrive/cc2m/cc12m_w_embeds/000000.tar'>", <_io.BufferedReader name='/datadrive/cc2m/cc12m_w_embeds/000000.tar'>, {'__url__': '/datadrive/cc2m/cc12m_w_embeds/000000.tar', '__worker__': '(0, 4)', '__rank__': 'None', '__nodeinfo__': "('stazure003', 18826)"})
