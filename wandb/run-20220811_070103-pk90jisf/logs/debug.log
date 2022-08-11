@@ -1,0 +1,101 @@
+2022-08-11 07:01:03,818 INFO    MainThread:16014 [wandb_setup.py:_flush():76] Configure stats pid to 16014
+2022-08-11 07:01:03,818 INFO    MainThread:16014 [wandb_setup.py:_flush():76] Loading settings from /home/azureuser/.config/wandb/settings
+2022-08-11 07:01:03,818 INFO    MainThread:16014 [wandb_setup.py:_flush():76] Loading settings from /home/azureuser/imagen/imagen_pytorch/wandb/settings
+2022-08-11 07:01:03,818 INFO    MainThread:16014 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2022-08-11 07:01:03,818 INFO    MainThread:16014 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-08-11 07:01:03,819 INFO    MainThread:16014 [wandb_init.py:_log_setup():461] Logging user logs to /home/azureuser/imagen/imagen_pytorch/wandb/run-20220811_070103-pk90jisf/logs/debug.log
+2022-08-11 07:01:03,819 INFO    MainThread:16014 [wandb_init.py:_log_setup():462] Logging internal logs to /home/azureuser/imagen/imagen_pytorch/wandb/run-20220811_070103-pk90jisf/logs/debug-internal.log
+2022-08-11 07:01:03,819 INFO    MainThread:16014 [wandb_init.py:init():495] calling init triggers
+2022-08-11 07:01:03,819 INFO    MainThread:16014 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2022-08-11 07:01:03,819 INFO    MainThread:16014 [wandb_init.py:init():543] wandb.init() called when a run is still active
+2022-08-11 07:01:40,525 INFO    MainThread:16014 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-08-11 07:01:40,526 INFO    MainThread:16014 [wandb_run.py:_restore():1834] restore
+2022-08-11 07:01:43,342 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 730
+  total_bytes: 730
+}
+
+2022-08-11 07:01:43,504 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 730
+  total_bytes: 730
+}
+
+2022-08-11 07:01:44,424 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 730
+  total_bytes: 730
+}
+
+2022-08-11 07:01:44,532 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 730
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:44,634 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:44,735 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:44,837 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:44,938 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:45,563 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+
+2022-08-11 07:01:45,767 INFO    MainThread:16014 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 7350
+  total_bytes: 7350
+}
+local_info {
+}
+
+2022-08-11 07:01:47,543 INFO    MainThread:16014 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-08-11 07:01:47,543 INFO    MainThread:16014 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-08-11 07:01:47,545 INFO    MainThread:16014 [wandb_run.py:_footer_sync_info():3055] logging synced files

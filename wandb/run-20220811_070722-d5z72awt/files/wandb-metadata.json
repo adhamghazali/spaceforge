@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-1089-azure-x86_64-with-glibc2.27",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-08-11T07:07:22.565347",
+    "startedAt": "2022-08-11T07:07:22.194310",
+    "docker": null,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/azureuser/imagen/imagen_pytorch/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/camlaedtke/imagen_pytorch.git",
+        "commit": "05213cb2e79903664746fcd4cdbd7fc36a429ad6"
+    },
+    "email": null,
+    "root": "/home/azureuser/imagen/imagen_pytorch",
+    "host": "stazure003",
+    "username": "azureuser",
+    "executable": "/home/azureuser/miniconda3/envs/imagen/bin/python"
+}
