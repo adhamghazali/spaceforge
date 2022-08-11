@@ -3,7 +3,7 @@ dataset:
   dataset_path: "file:E:/datasets/cc12m/{00000..00466}.tar"
   image_size: 256
   shuffle_size: 1500
-  num_images: 10554521
+  num_images: 10428650
   num_workers: 6
   prefetch_factor: 1
   pin_memory: True
@@ -32,7 +32,7 @@ train:
   warmup_steps: None
   cosine_decay_max_steps: None
   cond_scale: 5
-  sample_texts: ['dog', 'cheeseburger', 'blue car', 'red flowers in a white vase', 'a puppy looking anxiously at a giant donut on the table', 'the milky way galaxy in the style of monet']
+  sample_texts: ['a 3d render of a purple cow, highly detailed','a sports car sketch']
 model:
   text_encoder_name: "google/t5-v1_1-xl"
   image_sizes: [64, 256]

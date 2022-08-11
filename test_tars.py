@@ -1,14 +1,20 @@
 import tarfile
+import os
+
+test_folder='/datadrive/cc2m/cc12m_w_embeds/'
+
+temp='/datadrive/cc2m/temp_test'
+
 
 def listdir_fullpath(d):
     return [os.path.join(d, f) for f in os.listdir(d)]
 
 
-def test(filename, testfolder):
+def test(filename, temp):
 
     temp_tar = tarfile.open(filename)
     try:
-        temp_tar.extractall(testfolder) # specify which folder to extract to
+        temp_tar.extractall(temp) # specify which folder to extract to
         temp_tar.close()
         return True
 
@@ -16,21 +22,18 @@ def test(filename, testfolder):
         return False
 
 
+if not os.path.exists(temp):
+  os.makedirs(temp)
 
-
-import os
-test_folder='/datadrive/cc2m/cc12m_w_embeds/'
 files=listdir_fullpath(test_folder)
-test_temp_folder='/datadrive/cc2m/temp_test'
-
-if not os.path.exists(test_temp_folder):
-  os.makedirs(test_temp_folder)
-
-
 for filename in files:
-    if test(filename, test_folder):
+    print(filename)
+    if test(filename, temp):
         continue
     else:
         print('Error in ', filename)
+
+commnad='sudo rm -r '+temp
+os.system(commnad)
 
 
