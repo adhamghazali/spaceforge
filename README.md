@@ -1,4 +1,4 @@
-# imagen_pytorch
+# spaceforge
 
 Training pipeline for Imagen, Google's Text-to-Image Neural Network, on the Conceptual 12M dataset. Using Phil Wang's excellent [repo](https://github.com/lucidrains/imagen-pytorch). 
 
