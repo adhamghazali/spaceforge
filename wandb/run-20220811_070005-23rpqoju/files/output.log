@@ -1,8 +1,0 @@
-<wandb.sdk.wandb_run.Run object at 0x7f29b9edc610>
->>>
-
->>> wandb.init(project='test_init')
-<wandb.sdk.wandb_run.Run object at 0x7f29b9edc610>
-
-
->>> exit()
