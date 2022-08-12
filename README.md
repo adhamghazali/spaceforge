@@ -1,6 +1,6 @@
 # spaceforge
 
-Training pipeline for Imagen, Google's Text-to-Image Neural Network, on the Conceptual 12M dataset. Using Phil Wang's excellent [repo](https://github.com/lucidrains/imagen-pytorch). 
+Training pipeline for Imagen,  Text-to-Image Neural Network, on the Conceptual 12M dataset. Using Phil Wang's excellent [repo](https://github.com/lucidrains/imagen-pytorch). 
 
 Training runs are logged in Wandb: https://wandb.ai/camlaedtke/imagen?workspace=user-camlaedtke
  
@@ -9,9 +9,9 @@ Training runs are logged in Wandb: https://wandb.ai/camlaedtke/imagen?workspace=
 
 Downloaded with [img2dataset](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/cc12m.md)
 
-On Windows ...
+On Linus ...
 ```bash
-curl.exe --output cc12m.tsv --url https://storage.googleapis.com/conceptual_12m/cc12m.tsv
+wget https://storage.googleapis.com/conceptual_12m/cc12m.tsv
 ```
 ```bash
 sed -i "1s/^/url\tcaption\n/" cc12m.tsv
