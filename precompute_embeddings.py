@@ -52,7 +52,7 @@ def shuffle_augment_wds(input, output):
     end = time()
     print(f"Finished - {end-start:.0f}s")
 
-input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00000..01242}.tar")
-output_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m_w_embeds/{00000..01242}.tar")
+input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{01083..01133}.tar")
+output_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m_w_embeds/{01083..01133}.tar")
 for input_shard, output_shard in zip(input_shards, output_shards):
     shuffle_augment_wds(input=input_shard, output=output_shard)
