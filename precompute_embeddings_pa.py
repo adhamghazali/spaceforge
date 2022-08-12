@@ -65,30 +65,41 @@ def shuffle_augment_wds(input, output):
 
 
 
+import asyncio
+from random import randint
 
 
-if __name__ == '__main__':
+async def process(input_shard, output_shard):
+    wait_time=1
+    print('processing {} into {} '.format(input_shard, output_shard))
+    shuffle_augment_wds(input=input_shard, output=output_shard)
+    await asyncio.sleep(wait_time)  # I/O, context will switch to main function
 
+
+sem = asyncio.Semaphore(10)
+
+
+async def safe_process(input_shard, output_shard):
+    async with sem:  # semaphore limits num of simultaneous downloads
+        return await process(input_shard, output_shard)
+
+
+async def main():
     input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00000..00010}.tar")
     output_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m_w_embeds/{00000..00010}.tar")
-
-    @background
-    def run(inputs):
-        T.sleep(2)
-        shuffle_augment_wds(input=inputs[0], output=inputs[1])
-        print('function finished for '+str(inputs[0])+" "+str(inputs[1]))
-
-
-    for input_shard, output_shard in zip(input_shards, output_shards):
-        inputs=[input_shard,output_shard]
-        run(inputs)
-
-    print('loop finished')
     
+    tasks = [
+        asyncio.ensure_future(safe_process(input_shard, output_shard))  # creating task starts coroutine
+        for input_shard, output_shard 
+        in zip(input_shards, output_shards)
+    ]
+    await asyncio.gather(*tasks)  # await moment all downloads done
 
 
-
-
-
-
-
+if __name__ ==  '__main__':
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_until_complete(main())
+    finally:
+        loop.run_until_complete(loop.shutdown_asyncgens())
+        loop.close()
