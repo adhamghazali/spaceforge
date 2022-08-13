@@ -1,13 +1,14 @@
 dataset:
   dataset_name: "cc12m"
-  dataset_path: "file:E:/datasets/cc12m/{00000..00466}.tar"
+  dataset_path: "/datadrive4T/cc12m_w_embeds/{00000..01242}.tar"
   image_size: 256
   shuffle_size: 1500
   num_images: 10428650
-  num_workers: 6
+  num_workers: 24
   prefetch_factor: 1
   pin_memory: True
   drop_last: True
+  precomputed_embeddings: True
 train:
   epochs: 5
   batch_size: 256
@@ -15,9 +16,9 @@ train:
   unet1_max_batch_size: 4
   unet2_max_batch_size: 2
   load_checkpoint: False
-  load_checkpoint_path: "./checkpoint/imagen_large_checkpoint.pt"
+  load_checkpoint_path: "/datadrive4T/checkpoint/imagen_large_checkpoint.pt"
   checkpoint_rate: 1000
-  checkpoint_path: "./checkpoint/imagen_large_checkpoint.pt"
+  checkpoint_path: "/datadrive4T/checkpoint/imagen_large_checkpoint.pt"
   checkpoint_strict: False
   checkpoint_model_only: False
   non_blocking: True

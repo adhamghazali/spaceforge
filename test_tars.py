@@ -1,9 +1,9 @@
 import tarfile
 import os
 
-test_folder='/datadrive/cc2m/cc12m_w_embeds/'
+test_folder='/datadrive4T/cc12m_w_embeds/'
 
-temp='/datadrive/cc2m/temp_test'
+temp='/datadrive4T/temp_test_tars'
 
 
 def listdir_fullpath(d):

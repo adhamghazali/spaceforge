@@ -155,7 +155,7 @@ if __name__ == "__main__":
     print(device)
 
     # wandb.init(project="imagen", entity="camlaedtke", config=cfg_flat, resume=True, id="ovh1a8wt")
-    wandb.init(project="imagen_small_test", entity="adham", config=cfg_flat)
+    wandb.init(project="imagen_large_training_xl", entity="adham", config=cfg_flat)
     
     ##### INPUT PIPELINE #####    
     preproc = T.Compose([
