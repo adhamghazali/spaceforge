@@ -170,7 +170,7 @@ if __name__ == "__main__":
         dataset = (
             wds.WebDataset(cfg["dataset"]["dataset_path"], shardshuffle=cfg["dataset"]["shard_shuffle"]) 
             .shuffle(cfg["dataset"]["shuffle_size"], initial=cfg["dataset"]["shuffle_initial"])
-            .decode("rgb")
+            .decode("pilrgb")
             .rename(image="png", embedding="emb.pyd")
             .map_dict(image=preproc)
             .to_tuple("image", "embedding")
