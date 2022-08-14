@@ -32,7 +32,9 @@ Training runs are logged in Wandb: https://wandb.ai/adham
 
 
 
-#### Conceptual 12M
+#### Datasets
+
+##### Conceptual 12M
 
 Downloaded with [img2dataset](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/cc12m.md)
 
@@ -51,7 +53,21 @@ img2dataset --url_list cc12m.tsv --input_format "tsv"\
 ```
 
 
+
+Guidelines: 
+
+- Larger language models seem to be better
+
+- Unet size has little impact on quality
+
+- Training data quality and quantity seems to have the largest impact
+
+  
+
+
+
 #### Some running notes
+
 - Batch size of 64-512 seems to be good.
 - Setting `max_grad_norm = 1.25` makes training more stable, but appears to considerably slow convergence and hurt performance.
 - Best results have been attained with a learning rate of around 1.5e-5 when combined with batch size of 256.
