@@ -83,6 +83,10 @@ error_tars=['00060.tar',
 '01162.tar',
 '01163.tar',
 '01166.tar',
+'01192.tar',
+'01229.tar',
+
+
 ]
 
 print(error_tars)
