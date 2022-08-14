@@ -1,5 +1,6 @@
 import tarfile
 import os
+import sys 
 
 test_folder='/datadrive4T/cc12m_w_embeds/'
 
@@ -25,15 +26,26 @@ def test(filename, temp):
 if not os.path.exists(temp):
   os.makedirs(temp)
 
+
+command='sudo rm -r '+temp
+cc=0
+file_path = 'tars.txt'
+sys.stdout = open(file_path, "w")
+
 files=listdir_fullpath(test_folder)
 for filename in files:
+    cc+=1
+    if cc%10==0:
+        os.system(command)
+        os.makedirs(temp)
+
     print(filename)
     if test(filename, temp):
         continue
     else:
         print('Error in ', filename)
 
-commnad='sudo rm -r '+temp
-os.system(commnad)
+
+os.system(command)
 
 
