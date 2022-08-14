@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/azureuser/imagen/spaceforge/train.py", line 170, in <module>
+    wds.WebDataset(cfg["dataset"]["dataset_path"], shardshuffle=cfg["dataset"]["shard_shuffle"])
+KeyError: 'shard_shuffle'
