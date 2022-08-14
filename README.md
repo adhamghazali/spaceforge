@@ -8,7 +8,7 @@ Training runs are logged in Wandb: https://wandb.ai/adham
 
 #### Plan: 
 
-- [ ] Do initial tests
+- [x] Do initial tests
 - [ ] Train the folowing net 
   - [ ] sf-v1-1 : `256x256` on [laion2B-en](https://huggingface.co/datasets/laion/laion2B-en) 250K iterations
   - [ ] sf-v1-1 `512x512` on [laion-high-resolution](https://huggingface.co/datasets/laion/laion-high-resolution)  (200K iterations) SR
