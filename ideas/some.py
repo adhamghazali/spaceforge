@@ -1,3 +1,5 @@
+import os
+
 error_tars=['00060.tar',
 '00153.tar',
 '00161.tar',
@@ -81,7 +83,13 @@ error_tars=['00060.tar',
 '01162.tar',
 '01163.tar',
 '01166.tar',
-
 ]
 
 print(error_tars)
+
+directory='/datadrive4T/cc12m_w_embeds/'
+for tar in error_tars:
+    filename=directory+tar
+    command='sudo rm '+filename
+    print(command)
+    os.system(command)
