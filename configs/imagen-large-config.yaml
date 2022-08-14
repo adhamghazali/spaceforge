@@ -3,6 +3,9 @@ dataset:
   dataset_path: "/datadrive4T/cc12m_w_embeds/{00000..01242}.tar"
   image_size: 256
   shuffle_size: 1500
+  #shuffle_size: 100000
+  shuffle_initial: 2500
+  shard_shuffle: True
   num_images: 10428650
   num_workers: 24
   prefetch_factor: 1
