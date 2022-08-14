@@ -1,0 +1,125 @@
+
+The base dimension of your u-net should ideally be no smaller than 128, as recommended by a professional DDPM trainer https://nonint.com/2022/05/04/friends-dont-let-friends-train-small-diffusion-models/
+Epoch 1/8
+--- Unet 1 ---
+<torch.utils.data.dataloader.DataLoader object at 0x7f271f2ee670>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Train Step 59/40736 --- Loss: 0.5220
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f272b4aaf70>
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1474, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/home/azureuser/imagen/spaceforge/train.py", line 269, in <module>
+    run_train_loop(cfg, trainer, loader, device, i=cfg["train"]["unet_number"])
+  File "/home/azureuser/imagen/spaceforge/train.py", line 144, in run_train_loop
+    train(cfg, dataloader, trainer, epoch, i, device)
+  File "/home/azureuser/imagen/spaceforge/train.py", line 87, in train
+    loss = trainer(
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/trainer.py", line 130, in inner
+    out = fn(model, *args, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/trainer.py", line 919, in forward
+    loss = self.imagen(*chunked_args, unet = self.unet_being_trained, unet_number = unet_number, **chunked_kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/imagen_pytorch.py", line 2380, in forward
+    return self.p_losses(unet, images, times, text_embeds = text_embeds, text_mask = text_masks, cond_images = cond_images, noise_scheduler = noise_scheduler, lowres_cond_img = lowres_cond_img, lowres_aug_times = lowres_aug_times, pred_objective = pred_objective, p2_loss_weight_gamma = p2_loss_weight_gamma, random_crop_size = random_crop_size)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/imagen_pytorch.py", line 2280, in p_losses
+    pred = unet.forward(
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/accelerate/utils/operations.py", line 507, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/amp/autocast_mode.py", line 12, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/imagen_pytorch.py", line 1623, in forward
+    x = attn_block(x, c)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/imagen_pytorch.py", line 964, in forward
+    x = attn(x, context = context) + x
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/einops_exts/torch.py", line 17, in forward
+    x = self.fn(x, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/imagen_pytorch/imagen_pytorch.py", line 544, in forward
+    return self.to_out(out)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
