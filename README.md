@@ -54,6 +54,20 @@ img2dataset --url_list cc12m.tsv --input_format "tsv"\
 
 
 
+
+
+#### Download 2B Images dataset - Laion2B-en Joined with watermark and punsafe data
+
+```markdown
+mkdir laion2B-en && cd laion2B-en
+for i in {00000..00127}; do wget https://huggingface.co/datasets/laion/laion2B-en-joined/resolve/main/part-$i-4cfd6e30-f032-46ee-9105-8696034a8373-c000.snappy.parquet; done
+cd ..
+```
+
+
+
+
+
 Guidelines: 
 
 - Larger language models seem to be better
