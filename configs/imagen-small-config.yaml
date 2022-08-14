@@ -1,27 +1,27 @@
 dataset:
   dataset_name: "cc12m"
-  dataset_path: "/datadrive/cc2m/cc12m_w_embeds/{00000..00002}.tar" 
+  dataset_path: "/datadrive4T/cc12m_w_embeds/{00000..01242}.tar"
   
   image_size: 256
   shuffle_size: 100000
   shuffle_initial: 2500
   shard_shuffle: True
-  num_images: 42123 
-  num_workers: 4
+  num_images: 10428650 
+  num_workers: 24
   prefetch_factor: 1
   pin_memory: True
   drop_last: True
   precomputed_embeddings: True
 train:
-  epochs: 5
+  epochs: 8
   batch_size: 256
   unet_number: 1
   unet1_max_batch_size: 32
   unet2_max_batch_size: 16
   load_checkpoint: False
-  load_checkpoint_path: "/datadrive/checkpoint/imagen_small_checkpoint.pt"
-  checkpoint_rate: 10
-  checkpoint_path: "/datadrive/checkpoint/imagen_small_checkpoint.pt"
+  load_checkpoint_path:  "/datadrive4T/checkpoint/imagen_large_checkpoint.pt"
+  checkpoint_rate: 1000
+  checkpoint_path:  "/datadrive4T/checkpoint/imagen_large_checkpoint.pt"
   checkpoint_strict: True
   checkpoint_model_only: False
   image_non_blocking: True
@@ -37,8 +37,8 @@ train:
   group_wd_params: True
   warmup_steps: None
   cosine_decay_max_steps: None
-  cond_scale: 5
-  sample_texts: ['dog','cheeseburger','blue car','red flowers in a white vase','a puppy looking anxiously at a giant donut on the table', 'lizard running across the desert on two feet']
+  cond_scale: 7.5
+  sample_texts: ['a 3d render of a purple cow, highly detailed','a sports car sketch']
 model:
   text_encoder_name: "google/t5-v1_1-xl"
   image_sizes: [64, 256]
