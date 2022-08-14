@@ -15,7 +15,7 @@ dataset:
 train:
   epochs: 8
   batch_size: 256
-  unet_number: 1
+  unet_number: 1 # dummy stuff unets are passed in code!
   unet1_max_batch_size: 32
   unet2_max_batch_size: 16
   load_checkpoint: False

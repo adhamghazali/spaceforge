@@ -138,12 +138,14 @@ def train(cfg, dataloader, trainer, epoch, i, device):
 
 def run_train_loop(cfg, trainer, dataloader, device, i=1):
     for epoch in range(1, cfg["train"]["epochs"]+1):
-        print(f"\nEpoch {epoch}/{cfg['train']['epochs']}")
-        print(f"--- Unet {i} ---")
-        start = time()
-        train(cfg, dataloader, trainer, epoch, i, device)
-        end = time()
-        print(f"  \n\nTime: {(end-start)/3600:.2f} hours")
+        #train two Unets
+        for unet_num in (1,2):
+            print(f"\nEpoch {epoch}/{cfg['train']['epochs']}")
+            print(f"--- Unet {unet_num} ---")
+            start = time()
+            train(cfg, dataloader, trainer, epoch, unet_num, device)
+            end = time()
+            print(f"  \n\nTime: {(end-start)/3600:.2f} hours")
         
           
 if __name__ == "__main__":
