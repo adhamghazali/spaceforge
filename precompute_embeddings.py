@@ -56,7 +56,8 @@ def shuffle_augment_wds(input, output):
 #input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00005..00005}.tar")
 #output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{00005..00005}.tar")
 
-input_shards=['01242.tar','01242.tar']#['00939.tar','00500.tar','00558.tar','00314.tar','00364.tar','00415.tar','00658.tar','00583.tar','00634.tar','00685.tar','00832.tar','00934.tar','01000.tar','01133.tar','01082.tar', '01184.tar','01242.tar','01242.tar']  #comment this to restore orig func
+input_shards=['00027.tar','00056.tar','00057.tar','00060.tar','00060.tar']
+#['00939.tar','00500.tar','00558.tar','00314.tar','00364.tar','00415.tar','00658.tar','00583.tar','00634.tar','00685.tar','00832.tar','00934.tar','01000.tar','01133.tar','01082.tar', '01184.tar','01242.tar','01242.tar']  #comment this to restore orig func
 output_shards=input_shards  #comment this to restore orig func
 
 for input_shard, output_shard in zip(input_shards, output_shards):
