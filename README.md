@@ -1,15 +1,42 @@
 # spaceforge
 
-Training pipeline for Imagen,  Text-to-Image Neural Network, on the Conceptual 12M dataset. Using Phil Wang's excellent [repo](https://github.com/lucidrains/imagen-pytorch). 
+A training pipeline for Imagen,  Text-to-Image Neural Network
 
-Training runs are logged in Wandb: https://wandb.ai/camlaedtke/imagen?workspace=user-camlaedtke
- 
+Training runs are logged in Wandb: https://wandb.ai/adham
+
+
+
+#### Plan: 
+
+- [ ] Do initial tests
+- [ ] Train the folowing net 
+  - [ ] sf-v1-1 : `256x256` on [laion2B-en](https://huggingface.co/datasets/laion/laion2B-en) 250K iterations
+  - [ ] sf-v1-1 `512x512` on [laion-high-resolution](https://huggingface.co/datasets/laion/laion-high-resolution)  (200K iterations) SR
+- [ ] Resume training from  sf-v1-1 to sf-v1-2
+  - [ ] sf-v1-2 : resumed from on laion-improved-aesthetics (a subset of laion 2B  with `512x512` and  improved aesthetics  score>5.0 and estimated watermark prob< 0.5)
+    - [ ] for score use [improved aesthetics estimator](https://github.com/christophschuhmann/improved-aesthetic-predictor)
+- [ ] Resume training from sf-v1-2 to sf-v1-3
+  - [ ] 10% dropping of the text conditioning 
+
+
+
+#### Todo: 
+
+- [ ] Make sure training is running smoothly
+- [ ] Download the following datasets:
+  - [ ]  [laion2B-en](https://huggingface.co/datasets/laion/laion2B-en) 
+  - [ ]  [laion-high-resolution](https://huggingface.co/datasets/laion/laion-high-resolution)  
+- [ ] Figure out which vms we are going to use
+- [ ]  use [improved aesthetics estimator](https://github.com/christophschuhmann/improved-aesthetic-predictor) to add meta data
+- [ ] Tests
+
+
 
 #### Conceptual 12M
 
 Downloaded with [img2dataset](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/cc12m.md)
 
-On Linus ...
+On Linux ...
 ```bash
 wget https://storage.googleapis.com/conceptual_12m/cc12m.tsv
 ```
