@@ -1,3 +1,4 @@
+import os
 import yaml
 import math
 import wandb
@@ -152,6 +153,8 @@ if __name__ == "__main__":
     
     cfg = yaml.safe_load(Path("./configs/imagen-small-config.yaml").read_text())
     cfg_flat = dict(FlatDict(cfg, delimiter='.'))
+    command='sudo chmod 777 '+cfg["train"]["checkpoint_path"]
+    os.system(command)
     
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     print(device)

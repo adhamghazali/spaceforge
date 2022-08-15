@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.4.0-1089-azure-x86_64-with-glibc2.27",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-08-14T19:37:46.479635",
+    "startedAt": "2022-08-14T19:37:46.278219",
+    "docker": null,
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/azureuser/imagen/spaceforge/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/spacetink/spaceforge.git",
+        "commit": "5044ca2aad60d6a4f0ddb6365b98fb71e6ea2789"
+    },
+    "email": "adham.ghazali@gmail.com",
+    "root": "/home/azureuser/imagen/spaceforge",
+    "host": "stazure003",
+    "username": "azureuser",
+    "executable": "/home/azureuser/miniconda3/envs/imagen/bin/python"
+}
