@@ -152,7 +152,7 @@ def run_train_loop(cfg, trainer, dataloader, device, i=1):
           
 if __name__ == "__main__":
     
-    cfg = yaml.safe_load(Path("./configs/imagen-small-config.yaml").read_text())
+    cfg = yaml.safe_load(Path("./configs/imagen-paper-config.yaml").read_text())
     cfg_flat = dict(FlatDict(cfg, delimiter='.'))
     command='sudo chmod 777 '+cfg["train"]["checkpoint_path"]
     os.system(command)
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     print(device)
 
-    wandb.init(project="imagen_2unets_training_xl", entity="adham", config=cfg_flat)
+    wandb.init(project="imagen_3unets_training_xl", entity="adham", config=cfg_flat)
     
     ##### INPUT PIPELINE #####    
     preproc = T.Compose([

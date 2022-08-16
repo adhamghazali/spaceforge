@@ -13,7 +13,8 @@ device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cp
 print(device)
 import gopen
 import os
-
+command='chmod 777 /datadrive4T/cc12m_w_embeds/'
+os.system(command)
 def get_emb_tensor(text):
     text_embeds = t5_encode_text([text], name="google/t5-v1_1-xl", return_attn_mask=False)
     #print(text_embeds.cpu().dtype)
@@ -63,18 +64,11 @@ def shuffle_augment_wds(input, output):
     print(f"Finished - {end-start:.0f}s")
 
 #uncomment the following two lines to restore func
-#input_shards = braceexpand.braceexpand("/datadrive/cc2m/cc12m/{00005..00005}.tar")
-#output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{00005..00005}.tar")
+input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{00000..01242}.tar")
+output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{00000..01242}.tar")
 
-input_shards=['00027.tar']
-
-#['00939.tar','00500.tar','00558.tar','00314.tar','00364.tar','00415.tar','00658.tar','00583.tar','00634.tar','00685.tar','00832.tar','00934.tar','01000.tar','01133.tar','01082.tar', '01184.tar','01242.tar','01242.tar']  #comment this to restore orig func
-output_shards=input_shards  #comment this to restore orig func
 
 for input_shard, output_shard in zip(input_shards, output_shards):
-    input_shard='/datadrive4T/cc2m/cc12m/'+input_shard   #comment this to restore orig func
-    output_shard='/datadrive4T/cc12m_w_embeds/'+output_shard  #comment this to restore orig func
     shuffle_augment_wds(input=input_shard, output=output_shard)
-#T.sleep(500)
-#print("finished sleeping")
+
     
