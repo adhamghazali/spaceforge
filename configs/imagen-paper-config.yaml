@@ -16,8 +16,8 @@ train:
   epochs: 8
   batch_size: 256
   unet_number: 1 # dummy stuff unets are passed in code!
-  unet1_max_batch_size: 128
-  unet2_max_batch_size: 32
+  unet1_max_batch_size: 16
+  unet2_max_batch_size: 4
   load_checkpoint: False
   load_checkpoint_path:  "/datadrive4T/checkpoint/imagen_large_checkpoint.pt"
   checkpoint_rate: 1000

@@ -1,0 +1,100 @@
+2022-08-16 17:07:50,332 INFO    StreamThr :18668 [internal.py:wandb_internal():90] W&B internal server running at pid: 18668, started at: 2022-08-16 17:07:50.331648
+2022-08-16 17:07:50,334 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: status
+2022-08-16 17:07:50,335 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: status
+2022-08-16 17:07:50,337 DEBUG   SenderThread:18668 [sender.py:send():302] send: header
+2022-08-16 17:07:50,337 INFO    WriterThread:18668 [datastore.py:open_for_write():75] open: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/run-2j0f6ezn.wandb
+2022-08-16 17:07:50,347 DEBUG   SenderThread:18668 [sender.py:send():302] send: run
+2022-08-16 17:07:50,539 INFO    SenderThread:18668 [dir_watcher.py:__init__():216] watching files in: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files
+2022-08-16 17:07:50,539 INFO    SenderThread:18668 [sender.py:_start_run_threads():913] run started: 2j0f6ezn with start time 1660669670.32928
+2022-08-16 17:07:50,541 DEBUG   SenderThread:18668 [sender.py:send():302] send: summary
+2022-08-16 17:07:50,541 INFO    SenderThread:18668 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 17:07:50,544 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: check_version
+2022-08-16 17:07:50,544 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: check_version
+2022-08-16 17:07:50,574 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: run_start
+2022-08-16 17:07:50,577 DEBUG   HandlerThread:18668 [meta.py:__init__():35] meta init
+2022-08-16 17:07:50,577 DEBUG   HandlerThread:18668 [meta.py:__init__():50] meta init done
+2022-08-16 17:07:50,577 DEBUG   HandlerThread:18668 [meta.py:probe():216] probe
+2022-08-16 17:07:50,584 DEBUG   HandlerThread:18668 [meta.py:_setup_git():206] setup git
+2022-08-16 17:07:50,594 DEBUG   HandlerThread:18668 [meta.py:_setup_git():213] setup git done
+2022-08-16 17:07:50,595 DEBUG   HandlerThread:18668 [meta.py:_save_pip():54] save pip
+2022-08-16 17:07:50,595 DEBUG   HandlerThread:18668 [meta.py:_save_pip():68] save pip done
+2022-08-16 17:07:50,595 DEBUG   HandlerThread:18668 [meta.py:_save_conda():75] save conda
+2022-08-16 17:07:51,541 INFO    Thread-12 :18668 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/conda-environment.yaml
+2022-08-16 17:07:51,541 INFO    Thread-12 :18668 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/requirements.txt
+2022-08-16 17:07:51,541 INFO    Thread-12 :18668 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/wandb-summary.json
+2022-08-16 17:07:51,956 DEBUG   HandlerThread:18668 [meta.py:_save_conda():85] save conda done
+2022-08-16 17:07:51,956 DEBUG   HandlerThread:18668 [meta.py:probe():254] probe done
+2022-08-16 17:07:51,985 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 17:07:51,985 DEBUG   SenderThread:18668 [sender.py:send():302] send: exit
+2022-08-16 17:07:51,986 INFO    SenderThread:18668 [sender.py:send_exit():438] handling exit code: 255
+2022-08-16 17:07:51,986 INFO    SenderThread:18668 [sender.py:send_exit():440] handling runtime: 1
+2022-08-16 17:07:51,987 INFO    SenderThread:18668 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 17:07:51,987 INFO    SenderThread:18668 [sender.py:send_exit():446] send defer
+2022-08-16 17:07:51,987 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 17:07:51,987 DEBUG   SenderThread:18668 [sender.py:send():302] send: files
+2022-08-16 17:07:51,987 INFO    SenderThread:18668 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-16 17:07:51,988 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:51,988 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-16 17:07:51,989 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:51,989 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-16 17:07:51,989 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 1
+2022-08-16 17:07:51,990 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:51,990 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-16 17:07:52,011 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,011 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-16 17:07:52,011 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 2
+2022-08-16 17:07:52,011 DEBUG   SenderThread:18668 [sender.py:send():302] send: stats
+2022-08-16 17:07:52,012 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,012 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-16 17:07:52,012 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,012 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-16 17:07:52,012 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 3
+2022-08-16 17:07:52,012 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,012 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-16 17:07:52,012 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,012 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-16 17:07:52,012 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 4
+2022-08-16 17:07:52,013 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,013 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-16 17:07:52,013 DEBUG   SenderThread:18668 [sender.py:send():302] send: summary
+2022-08-16 17:07:52,013 INFO    SenderThread:18668 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 17:07:52,013 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,013 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-16 17:07:52,013 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 5
+2022-08-16 17:07:52,014 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,014 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-16 17:07:52,014 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,014 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-16 17:07:52,014 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 6
+2022-08-16 17:07:52,014 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,015 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-16 17:07:52,015 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,015 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-16 17:07:52,015 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 7
+2022-08-16 17:07:52,015 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,015 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-16 17:07:52,015 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,015 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-16 17:07:52,015 INFO    SenderThread:18668 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-16 17:07:52,090 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 17:07:52,317 INFO    Thread-16 :18668 [upload_job.py:push():138] Uploaded file /tmp/tmpvmklqmtwwandb/3tkysk2y-wandb-metadata.json
+2022-08-16 17:07:52,540 INFO    Thread-12 :18668 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/conda-environment.yaml
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/wandb-summary.json
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/wandb-metadata.json
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:finish():392] scan: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:finish():406] scan save: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/wandb-summary.json wandb-summary.json
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:finish():406] scan save: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/config.yaml config.yaml
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:finish():406] scan save: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/wandb-metadata.json wandb-metadata.json
+2022-08-16 17:07:52,541 INFO    SenderThread:18668 [dir_watcher.py:finish():406] scan save: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/requirements.txt requirements.txt
+2022-08-16 17:07:52,542 INFO    SenderThread:18668 [dir_watcher.py:finish():406] scan save: /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/conda-environment.yaml conda-environment.yaml
+2022-08-16 17:07:52,544 INFO    SenderThread:18668 [sender.py:transition_state():459] send defer: 8
+2022-08-16 17:07:52,544 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 17:07:52,545 DEBUG   HandlerThread:18668 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 17:07:52,545 INFO    HandlerThread:18668 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-16 17:07:52,546 DEBUG   SenderThread:18668 [sender.py:send_request():316] send_request: defer
+2022-08-16 17:07:52,546 INFO    SenderThread:18668 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-16 17:07:52,546 INFO    SenderThread:18668 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-16 17:07:52,879 INFO    Thread-19 :18668 [upload_job.py:push():138] Uploaded file /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/requirements.txt
+2022-08-16 17:07:52,884 INFO    Thread-18 :18668 [upload_job.py:push():138] Uploaded file /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/files/config.yaml
+2022-08-16 17:07:52,988 INFO    MainThread:18668 [internal.py:handle_exit():80] Internal process exited
+2022-08-16 17:07:52,989 WARNING MsgRouterThr:18668 [router.py:message_loop():73] EOFError seen in message_loop

@@ -9,11 +9,17 @@ from time import time
 from tqdm import tqdm
 import webdataset as wds
 from imagen_pytorch.t5 import t5_encode_text
-device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+device =torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+#import dask
+
 print(device)
 import gopen
 import os
-command='chmod 777 /datadrive4T/cc12m_w_embeds/'
+
+
+#dask.config.set(pool=ThreadPool(4))
+
+command='sudo chmod 777 /datadrive4T/cc12m_w_embeds/'
 os.system(command)
 def get_emb_tensor(text):
     text_embeds = t5_encode_text([text], name="google/t5-v1_1-xl", return_attn_mask=False)
@@ -30,12 +36,12 @@ def get_count(input_file):
     return count
 
 
-def shuffle_augment_wds(input, output):
+def shuffle_augment_wds(inp, output):
     start = time()
-    count = get_count(input)
-    input = input
+    count =get_count(inp)
+    #inp = input
     src = wds.DataPipeline(
-        wds.SimpleShardList(input),
+        wds.SimpleShardList(inp),
         wds.tarfile_to_samples(),
         wds.decode("rgb"),
         wds.to_tuple("__key__", "jpg;png", "txt", "txt"),
@@ -43,7 +49,7 @@ def shuffle_augment_wds(input, output):
     )
 
     samples = []
-    for key, img, cap, emb in tqdm(src, total=count, desc=f"Extracting {input}"):
+    for key, img, cap, emb in tqdm(src, total=count, desc=f"Extracting {inp}"):
         #print(img)
         
         #Image.open(img)
@@ -64,11 +70,24 @@ def shuffle_augment_wds(input, output):
     print(f"Finished - {end-start:.0f}s")
 
 #uncomment the following two lines to restore func
+
+
 input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{00000..01242}.tar")
 output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{00000..01242}.tar")
 
+#input_shards= dask.delayed(input_shards)
+
+#results = [dask.delayed(shuffle_augment_wds)(i,j) for i,j in zip(input_shards, output_shards)]
+#print(results)
+#from concurrent.futures import ThreadPoolExecutor
+#with dask.config.set(pool=ThreadPoolExecutor(2)):
+#    dask.compute(*results)(num_workers=2)
+
 
 for input_shard, output_shard in zip(input_shards, output_shards):
-    shuffle_augment_wds(input=input_shard, output=output_shard)
+    shuffle_augment_wds(input_shard, output_shard)
 
-    
+
+#with dask.config.set(pool=ThreadPoolExecutor(2)):
+#    dask.compute(*results)
+#dask.compute(*results)(num_workers=2)    

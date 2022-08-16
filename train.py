@@ -239,9 +239,24 @@ if __name__ == "__main__":
         cosine_sim_attn = cfg["model"]["unet2"]["cosine_sim_attn"],
         use_linear_attn = cfg["model"]["unet2"]["use_linear_attn"]
     )
+    unet3 = Unet(
+        dim = cfg["model"]["unet3"]["dim"],
+        cond_dim = cfg["model"]["unet3"]["cond_dim"],
+        dim_mults = cfg["model"]["unet3"]["dim_mults"],
+        num_resnet_blocks = cfg["model"]["unet3"]["num_resnet_blocks"],
+        layer_attns = cfg["model"]["unet3"]["layer_attns"],
+        layer_cross_attns = cfg["model"]["unet3"]["layer_cross_attns"],
+        attn_heads = cfg["model"]["unet3"]["attn_heads"],
+        ff_mult = cfg["model"]["unet3"]["ff_mult"],
+        memory_efficient = cfg["model"]["unet3"]["memory_efficient"],
+        dropout = cfg["model"]["unet3"]["dropout"],
+        cosine_sim_attn = cfg["model"]["unet3"]["cosine_sim_attn"],
+        use_linear_attn = cfg["model"]["unet3"]["use_linear_attn"]
+    )
+
 
     imagen = Imagen(
-        unets = (unet1, unet2),
+        unets = (unet1, unet2, unet3),
         text_encoder_name = cfg["model"]["text_encoder_name"], 
         image_sizes = cfg["model"]["image_sizes"], 
         cond_drop_prob = cfg["model"]["cond_drop_prob"],

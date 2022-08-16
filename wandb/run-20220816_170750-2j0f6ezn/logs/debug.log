@@ -1,0 +1,38 @@
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_setup.py:_flush():76] Configure stats pid to 18658
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_setup.py:_flush():76] Loading settings from /home/azureuser/.config/wandb/settings
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_setup.py:_flush():76] Loading settings from /home/azureuser/imagen/spaceforge/wandb/settings
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': '/home/azureuser/imagen/spaceforge/train.py'}
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:_log_setup():461] Logging user logs to /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/logs/debug.log
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:_log_setup():462] Logging internal logs to /home/azureuser/imagen/spaceforge/wandb/run-20220816_170750-2j0f6ezn/logs/debug-internal.log
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:init():495] calling init triggers
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {'dataset.dataset_name': 'cc12m', 'dataset.dataset_path': '/datadrive4T/cc2m/cc12m/{00000..01242}.tar', 'dataset.image_size': 256, 'dataset.shuffle_size': 100000, 'dataset.shuffle_initial': 2500, 'dataset.shard_shuffle': True, 'dataset.num_images': 10428650, 'dataset.num_workers': 12, 'dataset.prefetch_factor': 1, 'dataset.pin_memory': True, 'dataset.drop_last': True, 'dataset.precomputed_embeddings': False, 'train.epochs': 8, 'train.batch_size': 256, 'train.unet_number': 1, 'train.unet1_max_batch_size': 64, 'train.unet2_max_batch_size': 16, 'train.load_checkpoint': False, 'train.load_checkpoint_path': '/datadrive4T/checkpoint/imagen_large_checkpoint.pt', 'train.checkpoint_rate': 1000, 'train.checkpoint_path': '/datadrive4T/checkpoint/imagen_large_checkpoint.pt', 'train.checkpoint_strict': True, 'train.checkpoint_model_only': False, 'train.image_non_blocking': True, 'train.embedding_non_blocking': False, 'train.cudnn_benchmark': True, 'train.use_ema': True, 'train.lr': 1.5e-05, 'train.eps': 1e-08, 'train.beta1': 0.9, 'train.beta2': 0.99, 'train.max_grad_norm': 'None', 'train.amp': True, 'train.group_wd_params': True, 'train.warmup_steps': 'None', 'train.cosine_decay_max_steps': 'None', 'train.cond_scale': 7.5, 'train.sample_texts': ['a 3d render of a purple cow, highly detailed', 'a sports car sketch'], 'model.text_encoder_name': 'google/t5-v1_1-xl', 'model.image_sizes': [64, 256, 1024], 'model.cond_drop_prob': 0.1, 'model.timesteps': 1000, 'model.unet1.dim': 512, 'model.unet1.cond_dim': 512, 'model.unet1.dim_mults': [1, 2, 3, 4], 'model.unet1.num_resnet_blocks': 3, 'model.unet1.layer_attns': [False, True, True, True], 'model.unet1.layer_cross_attns': [False, True, True, True], 'model.unet1.attn_heads': 8, 'model.unet1.ff_mult': 2, 'model.unet1.dropout': 0.1, 'model.unet1.memory_efficient': False, 'model.unet1.cosine_sim_attn': False, 'model.unet1.use_linear_attn': False, 'model.unet2.dim': 128, 'model.unet2.cond_dim': 512, 'model.unet2.dim_mults': [1, 2, 4, 8], 'model.unet2.num_resnet_blocks': [2, 4, 8, 8], 'model.unet2.layer_attns': [False, False, False, True], 'model.unet2.layer_cross_attns': [False, False, False, True], 'model.unet2.attn_heads': 8, 'model.unet2.ff_mult': 2, 'model.unet2.dropout': 0.1, 'model.unet2.memory_efficient': True, 'model.unet2.cosine_sim_attn': False, 'model.unet2.use_linear_attn': False, 'model.unet3.dim': 128, 'model.unet3.cond_dim': 512, 'model.unet3.dim_mults': [1, 2, 4, 8], 'model.unet3.num_resnet_blocks': [2, 4, 8, 8], 'model.unet3.layer_attns': [False, False, False, True], 'model.unet3.layer_cross_attns': [False, False, False, True], 'model.unet3.attn_heads': 8, 'model.unet3.ff_mult': 2, 'model.unet3.dropout': 0.1, 'model.unet3.memory_efficient': True, 'model.unet3.cosine_sim_attn': False, 'model.unet3.use_linear_attn': False}
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:init():548] starting backend
+2022-08-16 17:07:50,323 INFO    MainThread:18658 [wandb_init.py:init():552] setting up manager
+2022-08-16 17:07:50,326 INFO    MainThread:18658 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-16 17:07:50,329 INFO    MainThread:18658 [wandb_init.py:init():558] backend started and connected
+2022-08-16 17:07:50,337 INFO    MainThread:18658 [wandb_init.py:init():636] updated telemetry
+2022-08-16 17:07:50,345 INFO    MainThread:18658 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2022-08-16 17:07:50,543 INFO    MainThread:18658 [wandb_run.py:_on_init():1982] communicating current version
+2022-08-16 17:07:50,569 INFO    MainThread:18658 [wandb_run.py:_on_init():1986] got version response 
+2022-08-16 17:07:50,569 INFO    MainThread:18658 [wandb_init.py:init():700] starting run threads in backend
+2022-08-16 17:07:51,730 WARNING MainThread:18658 [wandb_init.py:init():1064] interrupted
+Traceback (most recent call last):
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 711, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 234, in communicate_run_start
+    result = self._communicate_run_start(run_start)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 445, in _communicate_run_start
+    result = self._communicate(rec)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/threading.py", line 574, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/azureuser/miniconda3/envs/imagen/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
