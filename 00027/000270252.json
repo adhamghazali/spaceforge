@@ -1,0 +1,13 @@
+{
+    "caption": "Photograph of a portrait of <PERSON>.",
+    "url": "http://blog.mimas.ac.uk/archiveshub/wp-content/uploads/sites/8/2015/12/bca_olaudah.jpg",
+    "key": "000270252",
+    "status": "success",
+    "error_message": null,
+    "width": 256,
+    "height": 256,
+    "original_width": 400,
+    "original_height": 729,
+    "exif": "{\"Image Orientation\": \"Horizontal (normal)\", \"Image XResolution\": \"72\", \"Image YResolution\": \"72\", \"Image ResolutionUnit\": \"Pixels/Inch\", \"Image DateTime\": \"2015:12:14 14:56:23\", \"Image ExifOffset\": \"2194\", \"Image Padding\": \"[]\", \"Thumbnail Compression\": \"JPEG (old-style)\", \"Thumbnail XResolution\": \"96\", \"Thumbnail YResolution\": \"96\", \"Thumbnail ResolutionUnit\": \"Pixels/Inch\", \"Thumbnail JPEGInterchangeFormat\": \"4536\", \"Thumbnail JPEGInterchangeFormatLength\": \"5266\", \"EXIF ExifVersion\": \"\", \"EXIF DateTimeOriginal\": \"2015:07:20 07:54:00\", \"EXIF DateTimeDigitized\": \"2015:07:20 07:54:00\", \"EXIF SubSecTimeOriginal\": \"00\", \"EXIF SubSecTimeDigitized\": \"00\", \"EXIF FlashPixVersion\": \"\", \"EXIF ColorSpace\": \"Uncalibrated\", \"EXIF ImageUniqueID\": \"14F33C1480354ECA9B9F5DA9FFCF20BF\", \"EXIF Padding\": \"[]\"}",
+    "md5": "7d394f23f4a844f5f74d1909d02faaea"
+}

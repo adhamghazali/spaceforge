@@ -1,0 +1,1 @@
+Flip-flops Flip-flop: A circuit built from gates that can store one bit. One input line is used to set its stored value to 1.

@@ -135,6 +135,7 @@ def train(cfg, dataloader, trainer, epoch, i, device):
             })
         print(f"\rTrain Step {step+1}/{n_batches} --- Loss: {loss:.4f} ", end='')
         step_start = time()
+        torch.cuda.empty_cache()
         
 
 def run_train_loop(cfg, trainer, dataloader, device, i=1):
@@ -166,14 +167,14 @@ if __name__ == "__main__":
         T.Resize(cfg["dataset"]["image_size"]),
         T.RandomHorizontalFlip(),
         T.CenterCrop(cfg["dataset"]["image_size"]),
-        T.ToTensor()
+        #T.ToTensor()
     ])
     
     if cfg["dataset"]["precomputed_embeddings"]:
         dataset = (
             wds.WebDataset(cfg["dataset"]["dataset_path"], shardshuffle=cfg["dataset"]["shard_shuffle"]) 
             .shuffle(cfg["dataset"]["shuffle_size"], initial=cfg["dataset"]["shuffle_initial"])
-            .decode("pilrgb")
+            .decode("torchrgb8")
             .rename(image="png", embedding="emb.pyd")
             .map_dict(image=preproc)
             .to_tuple("image", "embedding")
@@ -192,7 +193,7 @@ if __name__ == "__main__":
         dataset = (
             wds.WebDataset(cfg["dataset"]["dataset_path"], shardshuffle=True)
             .shuffle(cfg["dataset"]["shuffle_size"])
-            .decode("pilrgb")
+            .decode("torchrgb8")
             .rename(image="jpg;png", caption="txt")
             .map_dict(image=preproc)
             .to_tuple("image", "caption")

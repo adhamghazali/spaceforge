@@ -1,0 +1,13 @@
+{
+    "caption": "The Pass Byron Bay Drone Photo",
+    "url": "https://i1.wp.com/aeroaus.com/wp-content/uploads/2018/12/the-pass2.jpg?resize=450%2C563&ssl=1",
+    "key": "000270419",
+    "status": "success",
+    "error_message": null,
+    "width": 256,
+    "height": 256,
+    "original_width": 450,
+    "original_height": 563,
+    "exif": "{\"Image ImageWidth\": \"4628\", \"Image ImageLength\": \"5785\", \"Image BitsPerSample\": \"[8, 8, 8]\", \"Image PhotometricInterpretation\": \"2\", \"Image Make\": \"Hasselblad\", \"Image Model\": \"L1D-20c\", \"Image Orientation\": \"Horizontal (normal)\", \"Image SamplesPerPixel\": \"3\", \"Image XResolution\": \"300\", \"Image YResolution\": \"300\", \"Image ResolutionUnit\": \"Pixels/Inch\", \"Image Software\": \"Adobe Photoshop CC 2017 (Macintosh)\", \"Image DateTime\": \"2018:11:20 13:08:22\", \"Image ExifOffset\": \"292\", \"GPS GPSVersionID\": \"[0, 0, 0, 0]\", \"GPS GPSLatitudeRef\": \"S\", \"GPS GPSLatitude\": \"[28, 381167/10000, 0]\", \"GPS GPSLongitudeRef\": \"E\", \"GPS GPSLongitude\": \"[153, 376833/10000, 0]\", \"GPS GPSAltitudeRef\": \"0\", \"GPS GPSAltitude\": \"160812627/625\", \"Image GPSInfo\": \"820\", \"Thumbnail Compression\": \"JPEG (old-style)\", \"Thumbnail XResolution\": \"72\", \"Thumbnail YResolution\": \"72\", \"Thumbnail ResolutionUnit\": \"Pixels/Inch\", \"Thumbnail JPEGInterchangeFormat\": \"1062\", \"Thumbnail JPEGInterchangeFormatLength\": \"4396\", \"EXIF ExposureTime\": \"1/640\", \"EXIF FNumber\": \"14/5\", \"EXIF ExposureProgram\": \"Manual\", \"EXIF ISOSpeedRatings\": \"200\", \"EXIF ExifVersion\": \"\", \"EXIF DateTimeOriginal\": \"2018:11:12 18:55:31\", \"EXIF DateTimeDigitized\": \"2018:11:12 18:55:31\", \"EXIF ShutterSpeedValue\": \"1165241/125000\", \"EXIF ApertureValue\": \"1485427/500000\", \"EXIF ExposureBiasValue\": \"-27/10\", \"EXIF MaxApertureValue\": \"2971/1000\", \"EXIF MeteringMode\": \"CenterWeightedAverage\", \"EXIF LightSource\": \"Daylight\", \"EXIF Flash\": \"Flash did not fire\", \"EXIF FocalLength\": \"513/50\", \"EXIF ColorSpace\": \"sRGB\", \"EXIF ExifImageWidth\": \"450\", \"EXIF ExifImageLength\": \"563\", \"EXIF FileSource\": \"0\", \"EXIF SceneType\": \"0\", \"EXIF ExposureMode\": \"Manual Exposure\", \"EXIF WhiteBalance\": \"Auto\", \"EXIF DigitalZoomRatio\": \"1\", \"EXIF FocalLengthIn35mmFilm\": \"28\", \"EXIF SceneCaptureType\": \"Standard\", \"EXIF GainControl\": \"None\", \"EXIF Contrast\": \"Normal\", \"EXIF Saturation\": \"Normal\", \"EXIF Sharpness\": \"Normal\", \"EXIF LensSpecification\": \"[28, 28, 14/5, 11]\", \"EXIF LensModel\": \"28.0 mm f/2.8\"}",
+    "md5": "b281865ab105b09c2f9dc122b8c160b3"
+}

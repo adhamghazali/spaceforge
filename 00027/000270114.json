@@ -1,0 +1,13 @@
+{
+    "caption": "Aerial view of the UA Campus.",
+    "url": "https://api-assets.ua.pt/v1/image/resizer?imageUrl=https://www.ua.pt/contents/imgs/spaces/campus_panoramico.jpg&width=1200",
+    "key": "000270114",
+    "status": "success",
+    "error_message": null,
+    "width": 256,
+    "height": 256,
+    "original_width": 1200,
+    "original_height": 675,
+    "exif": "{}",
+    "md5": "110186bbc40afcbef4c05122c4878e30"
+}
