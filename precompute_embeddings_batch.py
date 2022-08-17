@@ -1,3 +1,4 @@
+import json
 from sre_parse import Tokenizer
 import time as T
 import torch
@@ -121,14 +122,14 @@ def t5_encode_tokenized_text(
 
 def t5_encode_text(
     texts: List[str],
-    name = DEFAULT_T5_NAME,
     tokenizer,
     t5model,
+    name = DEFAULT_T5_NAME,
     return_attn_mask = False
     
 ):
     token_ids, attn_mask = t5_tokenize(texts,tokenizer, name = name)
-    encoded_text = t5_encode_tokenized_text(token_ids, t5model attn_mask = attn_mask, name = name)
+    encoded_text = t5_encode_tokenized_text(token_ids, t5model, attn_mask = attn_mask, name = name)
 
     if return_attn_mask:
         attn_mask = attn_mask.bool()
@@ -155,7 +156,7 @@ os.system(command)
 def get_emb_tensor_batch(texts):
     print("calculating text embedding for batch")
     
-    text_embeds = t5_encode_text(texts, t5, tokenizer, name="google/t5-v1_1-xl", return_attn_mask=False)
+    text_embeds = t5_encode_text(texts, tokenizer, t5, name="google/t5-v1_1-xl", return_attn_mask=False)
     #print(text_embeds.cpu().dtype)
     return text_embeds.cpu().detach().numpy()
 
