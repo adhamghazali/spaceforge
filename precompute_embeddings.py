@@ -50,9 +50,6 @@ def shuffle_augment_wds(inp, output):
 
     samples = []
     for key, img, cap, emb in tqdm(src, total=count, desc=f"Extracting {inp}"):
-        #print(img)
-        
-        #Image.open(img)
         samples.append([key, img, cap, emb])
     random.shuffle(samples)
     if os.path.exists(output):
