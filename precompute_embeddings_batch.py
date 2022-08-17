@@ -51,47 +51,46 @@ def shuffle_augment_wds(inp, output):
         wds.map_tuple(None, None, None)
     )
 
-    texts=[]
     batch_size=16
     counter=0
     batch_keys=[]
-    CAPS=[]
-    IMAGES=[]
+    batch_caps=[]
+    batch_images=[]
     samples=[]
 
     for key,img, cap in tqdm(src, total=count, desc=f"Extracting {inp}"):
-        texts.append(cap)
-        counter+=1
         batch_keys.append(key)
-        CAPS.append(cap)
-        IMAGES.append(img)
+        batch_caps.append(cap)
+        batch_images.append(img)
 
-        if counter==batch_size:
-            embeddings=get_emb_tensor_batch(texts)
+        if counter%batch_size==0:
+            embeddings=get_emb_tensor_batch(batch_caps)
             for ii,_ in enumerate(batch_keys):
                 
                 embed=get_emb_tensor(embeddings, ii)
-                samples.append([batch_keys[ii],IMAGES[ii],CAPS[ii],embed])
-            texts=[]
-            IMAGES=[]
-            CAPS=[]
+                samples.append([batch_keys[ii],batch_images[ii],batch_caps[ii],embed])
+        
+            batch_images=[]
+            batch_caps=[]
             batch_keys=[]
+        counter+=1
+
+        
+    random.shuffle(samples)
+    if os.path.exists(output):
+        os.remove(output)
+
+    with wds.TarWriter(output, encoder=True) as dst:
+        for sample in tqdm(samples, total=count, desc=f"Writing {output}"):
+            dst.write({"__key__":sample[0], "png":sample[1], "txt":sample[2], "npy":sample[3]})
 
 
 
-
-
-    
-    
-
-  
 
 
 
 input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{01241..01241}.tar")
-output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{01241..01241}.tar")
-
-
+output_shards = braceexpand.braceexpand("../{01241..01241}.tar")
 
 
 for input_shard, output_shard in zip(input_shards, output_shards):
