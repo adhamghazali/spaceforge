@@ -22,9 +22,12 @@ import os
 command='sudo chmod 777 /datadrive4T/cc12m_w_embeds/'
 os.system(command)
 def get_emb_tensor_batch(texts):
-    text_embeds = t5_encode_text([texts], name="google/t5-v1_1-xl", return_attn_mask=False)
+    text_embeds = t5_encode_text(texts, name="google/t5-v1_1-xl", return_attn_mask=False)
     #print(text_embeds.cpu().dtype)
     return text_embeds.cpu().detach().numpy()
+
+def get_emb_tensor(embeddings,key):
+    return embeddings[key]
 
 
 def get_count(input_file):
@@ -44,22 +47,49 @@ def shuffle_augment_wds(inp, output):
         wds.SimpleShardList(inp),
         wds.tarfile_to_samples(),
         wds.decode("rgb"),
-        wds.to_tuple("__key__", "jpg;png", "txt"),
+        wds.to_tuple("__key__", "jpg;png", "txt",),
         wds.map_tuple(None, None, None)
     )
 
     texts=[]
-    for key, _ ,cap in src:
+    batch_size=16
+    counter=0
+    batch_keys=[]
+    CAPS=[]
+    IMAGES=[]
+    samples=[]
+
+    for key,img, cap in tqdm(src, total=count, desc=f"Extracting {inp}"):
         texts.append(cap)
-    print(texts)
+        counter+=1
+        batch_keys.append(key)
+        CAPS.append(cap)
+        IMAGES.append(img)
+
+        if counter==batch_size:
+            embeddings=get_emb_tensor_batch(texts)
+            for ii,_ in enumerate(batch_keys):
+                
+                embed=get_emb_tensor(embeddings, ii)
+                samples.append([batch_keys[ii],IMAGES[ii],CAPS[ii],embed])
+            texts=[]
+            IMAGES=[]
+            CAPS=[]
+            batch_keys=[]
+
+
+
+
+
+    
     
 
   
 
 
 
-input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{01242..01242}.tar")
-output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{01242..01242}.tar")
+input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{01241..01241}.tar")
+output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{01241..01241}.tar")
 
 
 
