@@ -22,6 +22,7 @@ import os
 command='sudo chmod 777 /datadrive4T/cc12m_w_embeds/'
 os.system(command)
 def get_emb_tensor_batch(texts):
+    print("calculating text embedding for batch")
     text_embeds = t5_encode_text(texts, name="google/t5-v1_1-xl", return_attn_mask=False)
     #print(text_embeds.cpu().dtype)
     return text_embeds.cpu().detach().numpy()
@@ -51,28 +52,30 @@ def shuffle_augment_wds(inp, output):
         wds.map_tuple(None, None, None)
     )
 
-    batch_size=16
+    batch_size=256
     counter=0
-    batch_keys=[]
-    batch_caps=[]
-    batch_images=[]
-    samples=[]
+    batch_keys=[0]*batch_size
+    batch_caps=['']*batch_size
+    batch_images=[[]]*batch_size
+    number_of_batches=int(count/batch_size)
+
+    samples=[[0],[''],[[]],[[]]]*(number_of_batches*batch_size)
 
     for key,img, cap in tqdm(src, total=count, desc=f"Extracting {inp}"):
-        batch_keys.append(key)
-        batch_caps.append(cap)
-        batch_images.append(img)
+        batch_keys[counter%batch_size]=key
+        batch_caps[counter%batch_size]=cap
+        batch_images[counter%batch_size]=img
 
         if counter%batch_size==0:
             embeddings=get_emb_tensor_batch(batch_caps)
             for ii,_ in enumerate(batch_keys):
                 
                 embed=get_emb_tensor(embeddings, ii)
-                samples.append([batch_keys[ii],batch_images[ii],batch_caps[ii],embed])
+                samples[counter]=[batch_keys[ii],batch_images[ii],batch_caps[ii],embed]
         
-            batch_images=[]
-            batch_caps=[]
-            batch_keys=[]
+            #batch_images=[]
+            #batch_caps=[]
+            #batch_keys=[]
         counter+=1
 
         
