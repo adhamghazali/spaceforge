@@ -6,7 +6,7 @@ Training runs are logged in Wandb: https://wandb.ai/adham
 
 
 
-#### Plan: 
+#### High level Plan: 
 
 - [x] Do initial tests
 - [ ] Train the folowing net 
@@ -24,9 +24,11 @@ Training runs are logged in Wandb: https://wandb.ai/adham
 
 - [ ] Make sure training is running smoothly
 - [ ] Download the following datasets:
+  - [x]  [Laion400M](https://github.com/rom1504/img2dataset/blob/main/dataset_examples/laion400m.md) 
   - [ ]  [laion2B-en](https://huggingface.co/datasets/laion/laion2B-en) 
   - [ ]  [laion-high-resolution](https://huggingface.co/datasets/laion/laion-high-resolution)  
 - [ ] Figure out which vms we are going to use
+  - [ ] GCP 
 - [ ]  use [improved aesthetics estimator](https://github.com/christophschuhmann/improved-aesthetic-predictor) to add meta data
 - [ ] Tests
 
