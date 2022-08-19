@@ -1,0 +1,310 @@
+2022-08-19 04:34:37,399 INFO    StreamThr :9892 [internal.py:wandb_internal():90] W&B internal server running at pid: 9892, started at: 2022-08-19 04:34:37.399599
+2022-08-19 04:34:37,402 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: status
+2022-08-19 04:34:37,403 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: status
+2022-08-19 04:34:37,407 DEBUG   SenderThread:9892 [sender.py:send():302] send: header
+2022-08-19 04:34:37,407 INFO    WriterThread:9892 [datastore.py:open_for_write():75] open: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/run-190tv7vr.wandb
+2022-08-19 04:34:37,416 DEBUG   SenderThread:9892 [sender.py:send():302] send: run
+2022-08-19 04:34:37,558 INFO    SenderThread:9892 [dir_watcher.py:__init__():216] watching files in: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files
+2022-08-19 04:34:37,559 INFO    SenderThread:9892 [sender.py:_start_run_threads():913] run started: 190tv7vr with start time 1660883677.398776
+2022-08-19 04:34:37,560 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:34:37,561 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:34:37,562 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: check_version
+2022-08-19 04:34:37,563 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: check_version
+2022-08-19 04:34:37,590 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: run_start
+2022-08-19 04:34:37,593 DEBUG   HandlerThread:9892 [meta.py:__init__():35] meta init
+2022-08-19 04:34:37,593 DEBUG   HandlerThread:9892 [meta.py:__init__():50] meta init done
+2022-08-19 04:34:37,593 DEBUG   HandlerThread:9892 [meta.py:probe():216] probe
+2022-08-19 04:34:37,600 DEBUG   HandlerThread:9892 [meta.py:_setup_git():206] setup git
+2022-08-19 04:34:37,611 DEBUG   HandlerThread:9892 [meta.py:_setup_git():213] setup git done
+2022-08-19 04:34:37,611 DEBUG   HandlerThread:9892 [meta.py:_save_pip():54] save pip
+2022-08-19 04:34:37,611 DEBUG   HandlerThread:9892 [meta.py:_save_pip():68] save pip done
+2022-08-19 04:34:37,611 DEBUG   HandlerThread:9892 [meta.py:_save_conda():75] save conda
+2022-08-19 04:34:38,560 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:34:38,560 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/conda-environment.yaml
+2022-08-19 04:34:38,560 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/requirements.txt
+2022-08-19 04:34:39,187 DEBUG   HandlerThread:9892 [meta.py:_save_conda():85] save conda done
+2022-08-19 04:34:39,187 DEBUG   HandlerThread:9892 [meta.py:probe():254] probe done
+2022-08-19 04:34:39,221 DEBUG   SenderThread:9892 [sender.py:send():302] send: files
+2022-08-19 04:34:39,221 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-19 04:34:39,225 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:34:39,226 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:34:39,275 DEBUG   SenderThread:9892 [sender.py:send():302] send: telemetry
+2022-08-19 04:34:39,560 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/conda-environment.yaml
+2022-08-19 04:34:39,560 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-metadata.json
+2022-08-19 04:34:39,600 INFO    Thread-16 :9892 [upload_job.py:push():138] Uploaded file /tmp/tmp5ak2iqg9wandb/3bzs2tdj-wandb-metadata.json
+2022-08-19 04:34:54,278 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:34:54,278 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:35:00,566 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_created():275] file/dir created: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:35:02,567 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:35:05,784 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:35:08,569 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/config.yaml
+2022-08-19 04:35:09,890 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:35:09,890 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:35:24,944 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:35:24,944 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:35:35,993 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:35:39,998 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:35:39,998 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:35:55,055 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:35:55,056 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:35:55,954 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:35:55,956 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:35:55,956 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:35:55,958 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:35:56,586 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:35:58,587 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:00,260 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:00,261 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:00,262 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:00,262 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:00,588 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:02,588 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:04,559 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:04,560 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:04,560 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:04,561 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:04,589 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:06,505 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:36:06,590 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:08,898 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:08,899 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:08,899 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:08,900 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:09,591 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:10,108 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:36:10,108 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:36:10,592 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:13,203 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:13,204 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:13,204 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:13,205 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:13,593 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:14,593 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:17,509 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:17,510 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:17,511 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:17,512 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:17,594 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:18,595 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:21,846 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:21,847 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:21,848 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:21,848 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:22,596 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:24,597 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:25,197 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:36:25,197 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:36:26,148 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:26,149 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:26,149 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:26,149 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:26,598 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:28,599 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:30,455 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:30,455 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:30,456 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:30,456 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:30,599 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:32,601 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:34,777 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:34,778 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:34,778 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:34,779 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:35,602 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:36,602 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:36,736 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:36:39,115 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:39,116 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:39,117 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:39,118 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:39,603 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:40,249 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:36:40,250 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:36:40,604 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:43,435 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:43,436 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:43,436 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:43,437 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:43,605 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:44,605 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:47,749 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:47,751 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:47,751 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:47,751 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:48,607 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:50,608 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:52,085 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:52,086 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:52,087 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:52,087 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:52,609 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:54,609 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:36:55,302 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:36:55,303 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:36:56,395 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:36:56,395 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:36:56,396 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:36:56,396 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:36:56,610 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:36:58,611 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:00,720 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:00,721 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:00,722 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:00,724 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:01,612 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:02,612 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:05,048 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:05,049 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:05,050 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:05,050 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:05,614 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:06,614 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:06,965 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:37:09,369 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:09,370 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:09,370 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:09,371 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:09,615 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:10,362 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:37:10,362 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:37:10,616 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:13,778 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:13,779 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:13,779 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:13,781 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:14,617 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:16,618 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:18,095 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:18,095 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:18,096 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:18,096 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:18,618 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:20,619 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:22,449 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:22,450 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:22,450 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:22,451 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:22,620 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:24,620 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:25,413 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:37:25,413 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:37:26,779 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:26,780 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:26,781 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:26,781 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:27,621 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:28,622 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:31,114 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:31,115 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:31,115 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:31,116 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:31,623 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:32,624 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:35,471 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:35,472 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:35,472 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:35,474 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:35,624 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:36,624 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:37,202 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:37:39,827 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:39,828 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:39,828 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:39,829 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:40,469 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:37:40,470 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:37:40,626 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:42,626 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:44,170 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:44,171 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:44,171 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:44,172 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:44,627 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:46,628 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:48,518 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:48,519 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:48,519 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:48,519 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:48,629 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:50,629 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:52,852 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:52,853 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:52,853 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:52,853 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:53,631 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:54,631 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:37:55,521 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:37:55,521 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:37:57,170 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:37:57,171 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:37:57,172 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:37:57,173 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:37:57,633 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:37:58,633 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:01,481 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:01,482 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:01,482 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:01,483 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:01,634 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:02,635 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:05,825 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:05,827 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:05,827 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:05,827 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:06,636 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:07,425 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:38:08,637 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:10,156 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:10,157 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:10,157 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:10,158 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:10,577 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:38:10,577 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:38:10,637 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:12,638 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:14,506 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:14,507 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:14,508 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:14,508 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:14,639 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:16,639 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:18,836 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:18,836 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:18,837 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:18,839 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:19,641 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:20,641 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:23,167 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:23,168 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:23,168 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:23,169 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:23,642 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:24,643 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:25,629 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:38:25,629 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status
+2022-08-19 04:38:27,509 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:27,510 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:27,510 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:27,511 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:27,644 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:28,644 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:31,843 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:31,845 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:31,845 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:31,847 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:32,646 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:34,646 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:36,186 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:36,187 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:36,187 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:36,188 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:36,647 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:37,650 DEBUG   SenderThread:9892 [sender.py:send():302] send: stats
+2022-08-19 04:38:38,648 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/output.log
+2022-08-19 04:38:40,526 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-19 04:38:40,527 DEBUG   SenderThread:9892 [sender.py:send():302] send: history
+2022-08-19 04:38:40,527 DEBUG   SenderThread:9892 [sender.py:send():302] send: summary
+2022-08-19 04:38:40,527 INFO    SenderThread:9892 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-19 04:38:40,648 INFO    Thread-12 :9892 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/azureuser/imagen/spaceforge/wandb/run-20220819_043437-190tv7vr/files/wandb-summary.json
+2022-08-19 04:38:40,681 DEBUG   HandlerThread:9892 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-19 04:38:40,681 DEBUG   SenderThread:9892 [sender.py:send_request():316] send_request: stop_status

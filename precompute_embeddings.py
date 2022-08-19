@@ -69,8 +69,8 @@ def shuffle_augment_wds(inp, output):
 #uncomment the following two lines to restore func
 
 
-input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{00000..01242}.tar")
-output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{00000..01242}.tar")
+input_shards = braceexpand.braceexpand("/datadrive4T/cc2m/cc12m/{01026..01242}.tar")
+output_shards = braceexpand.braceexpand("/datadrive4T/cc12m_w_embeds/{01026..01242}.tar")
 
 #input_shards= dask.delayed(input_shards)
 

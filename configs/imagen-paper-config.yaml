@@ -1,7 +1,6 @@
 dataset:
   dataset_name: "cc12m"
-  dataset_path: "/datadrive4T/cc2m/cc12m/{00000..01242}.tar"
-  
+  dataset_path: "/datadrive4T/cc12m_w_embeds/{00000..01242}.tar"
   image_size: 256
   shuffle_size: 100000
   shuffle_initial: 2500
@@ -11,7 +10,7 @@ dataset:
   prefetch_factor: 1
   pin_memory: True
   drop_last: True
-  precomputed_embeddings: False
+  precomputed_embeddings: True
 train:
   epochs: 8
   batch_size: 256
@@ -45,7 +44,7 @@ model:
   cond_drop_prob: 0.1
   timesteps: 1000
   unet1:
-    dim: 512
+    dim: 256 #paper-config is 512
     cond_dim: 512
     dim_mults: [1, 2, 3, 4]
     num_resnet_blocks: 3
