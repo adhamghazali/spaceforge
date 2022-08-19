@@ -22,3 +22,4 @@ config: {'dataset.dataset_name': 'cc12m', 'dataset.dataset_path': '/datadrive4T/
 2022-08-19 04:34:39,226 INFO    MainThread:9882 [wandb_run.py:_redirect():1885] Wrapping output streams.
 2022-08-19 04:34:39,226 INFO    MainThread:9882 [wandb_run.py:_redirect():1907] Redirects installed.
 2022-08-19 04:34:39,226 INFO    MainThread:9882 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-19 05:29:45,951 WARNING MsgRouterThr:9882 [router.py:message_loop():76] message_loop has been closed
